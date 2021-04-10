@@ -1,3 +1,15 @@
+@keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
 html {
     background-color: #efefef;
     color: #000;
@@ -29,3 +41,77 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.frame {
+    background-color: #fff;
+    position: relative;
+
+    @media (min-width: 448px) {
+      height: 400px;
+      width: 400px;
+    }
+  }
+
+  .outer-circle,
+  .inner-circle {
+    border: 1px solid #dfdfdf;
+    border-radius: 50%;
+  }
+
+  .outer-circle {
+    height: 300px;
+    width: 300px;
+
+    @media (min-width: 448px) {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .inner-circle {
+    background-color: #efefef;
+    -webkit-box-shadow: 0 0 15px 5px #ddd;
+    box-shadow: 0 0 15px 5px #ddd;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: scale(0.4);
+    transition: all 0.05s linear;
+    width: 100%;
+  }
+
+  .inner-circle--breathe-in {
+    background-color: #fff;
+    transform: scale(0.9);
+    transition: all 4s linear;
+  }
+
+  .inner-circle--breathe-out {
+    background-color: #efefef;
+    transform: scale(0.4);
+    transition: all 4s linear;
+  }
+
+  .message {
+    font-size: 2rem;
+    font-weight: 700;
+    left: 1rem;
+    position: absolute;
+    right: 1rem;
+    text-align: center;
+    text-shadow: 0 0 0.2em rgba(255, 255, 255, 0.8),
+      0 0 0.2em rgba(255, 255, 255, 0.8), 0 0 0.2em rgba(255, 255, 255, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .message--fade {
+    animation: fade-in-out 4s infinite;
+  }
+
+  .animation-toggle {
+    display: block;
+    max-width: 400px;
+    position: relative;
+  }
