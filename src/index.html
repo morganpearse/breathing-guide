@@ -1,6 +1,6 @@
 <html>
     <head>
-        <script type="text/javascript" src="js/breathing.js"></script>
+        
         <link rel="stylesheet" href="scss/breathing.scss">
     </head>
     <body>
@@ -18,7 +18,15 @@
                 <p>The steps are repeated as many times as needed.</p>
                 <h3>This useful interactive tool guides the user through the necessary steps</h3>
                 <p>When you're ready, click or tap the start button:</p>
+                <div class="frame">
+                    <div class="outer-circle">
+                        <div class="inner-circle"></div>
+                    </div>
+                    <div class="message">When you're ready...</div>
+                </div>
+                <a class="animation-toggle">Start breathing exercise</a>
             </div>
         </div>
+        <script type="text/javascript" src="js/breathing.js"></script>
     </body>
 </html>

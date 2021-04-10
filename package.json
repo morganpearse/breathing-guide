@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "es-dev-server": "^2.1.0"
+  },
+  "dependencies": {
+    "core-js": "^3.10.1",
+    "sass": "^1.32.8"
   }
 }
