@@ -1,0 +1,60 @@
+<html>
+    <head>        
+        <title>Breathing Component Demo</title>
+        <script type="module" src="../breathing-component.js"></script>
+        <style>
+            html {
+                background-color: #efefef;
+                color: #000;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 100%;
+                line-height: 1.75;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.125rem;
+                min-height: 100vh;
+            }
+
+            .wrapper {
+                background-color: #fff;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                max-width: 1024px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .content {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <h1>A guide to breathing</h1>
+                <h3><i>Square breathing</i>, sometimes known as <i>box breathing</i>, is a method of taking slow, deep breaths that aims to heighten concentration and relieve stress.</h3>
+                <p>It comprises the following steps:</p>
+                <ol>
+                    <li>Inhale for a count of four seconds</li>
+                    <li>Keep your lungs full for a count of four seconds</li>
+                    <li>Let out all of the air in your lungs for a count of four seconds</li>
+                    <li>Keep your lungs empty for a count of four seconds</li>
+                </ol>
+                <p>The steps are repeated as many times as needed.</p>
+                <h3>This useful interactive tool guides the user through the necessary steps</h3>
+                <p>You can choose from three different shapes for the animation.</p>
+                <p>When you're ready, click or tap the Start button:</p>
+                <breathing-component></breathing-component>
+            </div>
+        </div>
+    </body>
+</html>
