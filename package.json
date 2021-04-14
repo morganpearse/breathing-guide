@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "es-dev-server --app-index src/index.html --node-resolve --watch --open"
+    "start": "es-dev-server --app-index dev/index.html --node-resolve --watch --open"
   },
   "author": "",
   "license": "ISC",
